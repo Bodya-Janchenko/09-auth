@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation";
 import { NoteTag } from "@/types/note";
 import css from "./NoteForm.module.css";
 import { useId } from "react";
-import { categories } from "@/app/notes/filter/@sidebar/default";
+import { categories } from "@/app/(private routes)/notes/filter/@sidebar/default";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createNote } from "@/lib/api";
+import { createNote } from "@/lib/api/clientApi";
 import toast from "react-hot-toast";
 import { useNoteDraftStore } from "@/lib/stores/noteStore";
 

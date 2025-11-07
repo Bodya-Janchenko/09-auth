@@ -6,10 +6,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useDebounce } from "use-debounce";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { fetchNotes } from "@/lib/api";
+import { fetchNotes } from "@/lib/api/clientApi";
 
 import type { NoteTag } from "@/types/note";
-import type { FetchNotesResponse } from "@/lib/api";
+import type { FetchNotesResponse } from "@/lib/api/clientApi";
 
 import toast, { Toaster } from "react-hot-toast";
 import SearchBox from "@/components/SearchBox/SearchBox";

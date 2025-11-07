@@ -1,6 +1,6 @@
 "use client";
 
-import { categories } from "@/app/notes/filter/@sidebar/default";
+import { categories } from "@/app/(private routes)/notes/filter/@sidebar/default";
 import { useState } from "react";
 import Link from "next/link";
 
